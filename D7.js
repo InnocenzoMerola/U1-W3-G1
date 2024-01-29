@@ -208,6 +208,9 @@ const movies = [
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
 
+const titleArr = movies.map((titleObj) => titleObj.Title);
+console.log(titleArr);
+
 /* ESERCIZIO 12 (filter)
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
@@ -215,6 +218,15 @@ const movies = [
 /* ESERCIZIO 13 (reduce)
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
+
+const totalYears = movies.reduce((accumulator, currentValue) => {
+  console.log("Accumulator", accumulator);
+  console.log("Current Value", currentValue);
+
+  return accumulator + currentValue.Year;
+}, 0);
+
+console.log("TOTALE", totalYears);
 
 /* ESERCIZIO 14 (find)
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
