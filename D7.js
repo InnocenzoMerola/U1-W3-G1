@@ -89,9 +89,6 @@ const numbersPlus = function (n) {
 };
 console.log("Es. 6: ", numbersPlus(3));
 
-// const nums = [5, 4, 66, 2, 78, n];
-// const map1 = nums.map((nums) => nu);
-
 /* ESERCIZIO 7 (map)
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
